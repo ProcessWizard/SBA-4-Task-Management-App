@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script defer src="script.js"></script>
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Task List</h1>
+
+    <div id="task-form">
+        <input type="text" id="task-name" placeholder="Task Name">
+        <input type="text" id="task-category" placeholder="Category">
+        <input type="date" id="task-deadline">
+        <select id="task-status">
+
+            <option value="In Progress" selected>In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <div id="filters">
+        <button data-filter="All">All</button>
+        <button data-filter="In Progress">In Progress</button>
+        <button data-filter="Completed">Completed</button>
+        <button data-filter="Overdue">Overdue</button>
+    </div>
+
+
+    <ul id="task-list"></ul>
+
+
+</body>
+
+</html>
